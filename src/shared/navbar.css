@@ -1,0 +1,78 @@
+/* Shared Navbar Styles */
+:root {
+    --nav-bg: rgba(10, 10, 10, 0.7);
+    --nav-border: rgba(255, 255, 255, 0.1);
+    --nav-text: #888;
+    --nav-text-hover: #fff;
+    --nav-accent: #ff4d4d;
+    /* Red accent matching user preference from history */
+}
+
+#shared-navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--nav-border);
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+#shared-navbar:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    color: var(--nav-text-hover);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-separator {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 4px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-weight: 700;
+    margin-right: 8px;
+    padding-left: 8px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+/* Ensure body has space if needed, though this is a floating pill navbar */
+/* Overwrite default margins if necessary */
+body {
+    margin: 0;
+}
