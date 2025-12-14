@@ -66,6 +66,4 @@ GsapAnimation/
 
 The project follows a "dark mode" aesthetic with high contrast, subtle gradients, and premium motion design principles. The goal is to create a "wow" factor through fluid interactivity and refined visual polish.
 
-## 📄 License
 
-This project is licensed under the ISC License.
